@@ -7,7 +7,7 @@ load_dotenv()
 API_KEY = os.getenv("API_KEY")
 BASE_URL = os.getenv("BASE_URL")
 
-def euri_chat_completion(messages, model="gpt-4.1-nano", temprature = 0.7,max_tokens=1000):
+def euri_chat_completion(messages, model="gpt-4.1-nano", temprature = 0.7,max_tokens=100):
     url = f"{BASE_URL}/chat/completions"
     headers = {
         "Authorization" : f"Bearer {API_KEY}",

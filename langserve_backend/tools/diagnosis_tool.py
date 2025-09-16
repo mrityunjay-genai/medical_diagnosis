@@ -1,7 +1,7 @@
-from langchain.tools import tools
+from langchain.tools import tool
 from utils.euri_client import euri_chat_completion
 
-@tools
+@tool
 def ai_diagnosis(symptom_description : str) ->str:
     """Use EURI AI to diagnose based on symptoms"""
     messages = [
