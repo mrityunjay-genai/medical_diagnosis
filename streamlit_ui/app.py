@@ -14,8 +14,14 @@ if st.button("Get Diagnosis"):
 
     try:
     # for local
+        # response = requests.post(
+        #     "http://localhost:8000/diagnose/invoke",
+        #     headers = {"Content-Type":"application/json"},
+        #     json = {"input":state_input}
+        # )
+    # for Render
         response = requests.post(
-            "http://localhost:8000/diagnose/invoke",
+            "https://medical-diagnosis-45n4.onrender.com/diagnose/invoke",
             headers = {"Content-Type":"application/json"},
             json = {"input":state_input}
         )
