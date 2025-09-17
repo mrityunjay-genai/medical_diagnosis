@@ -21,7 +21,7 @@ if st.button("Get Diagnosis"):
         # )
     # for Render
         response = requests.post(
-            "https://medical-diagnosis-45n4.onrender.com/diagnose/invoke",
+            "https://medical-diagnosis-backend-ypi0.onrender.com/diagnose/invoke",
             headers = {"Content-Type":"application/json"},
             json = {"input":state_input}
         )
