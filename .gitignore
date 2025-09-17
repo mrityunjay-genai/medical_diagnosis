@@ -5,3 +5,5 @@ __pycache__
 
 # Ignore enviroment file
 .env
+
+execution_comand.txt
