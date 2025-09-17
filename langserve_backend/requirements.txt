@@ -5,3 +5,4 @@ langgraph
 langchain
 requests
 sse_starlette
+python-dotenv
