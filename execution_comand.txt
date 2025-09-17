@@ -1,0 +1,11 @@
+-------------Local command--------------------------
+# Executing main.py
+uvicorn main:app --host 0.0.0.0 --port 8000
+or 
+uvicorn main:app --host 127.0.0.1 --port 8000
+-------------Render command--------------------------
+#Render start command
+uvicorn main:app --host 0.0.0.0 --port 8000
+
+#Render streamlit app start command
+streamlit run app.py --server.port-10000 --server.enableCORS=false
